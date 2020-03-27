@@ -1,0 +1,7 @@
+{
+  "serverPort": "8182",
+  "dbName": "AfstuderenLight",
+  "dbServer": "localhost",
+  "dbPassword": "Y8C8N95ET9nVfHsTQO14GhYBlNCnFZJj8Mj93SK",
+  "connectionString": "mongodb+srv://afstudeerUser:Y8C8N95ET9nVfHsTQO14GhYBlNCnFZJj8Mj93SK@afstuderenlightcluster-vhsq8.gcp.mongodb.net/test?retryWrites=true&w=majority"
+}
