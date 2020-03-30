@@ -78,13 +78,25 @@ const RootQuery = new GraphQLObjectType({
         posts: {
             type: new GraphQLList(PostType),
             resolve(parent, args) {
-                return User.find({});
+                return Post.find();
             }
         },
         users: {
             type: new GraphQLList(UserType),
             resolve(parent, args) {
-                return User.find({});
+                return User.find().populate('posts')
+                    .populate({
+                        path: 'friends posts',
+                        populate: {
+                            path: 'friends posts',
+                            populate: {
+                                path: 'friends posts',
+                                populate: {
+                                    path: 'friends posts'
+                                }
+                            }
+                        }
+                    });
             }
         }
     }

@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const PostSchema = require('./Post');
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
@@ -19,8 +18,14 @@ const UserSchema = new Schema({
         type: Date,
         required: [true, 'Date of birth is required']
     },
-    friends: [this],
-    posts: [PostSchema.PostSchema]
+    friends: [{
+        type: Schema.Types.ObjectId,
+        ref: 'user'
+    }],
+    posts: [{
+        type: Schema.Types.ObjectId,
+        ref: 'post'
+    }]
 });
 
 const User = mongoose.model('user', UserSchema);
