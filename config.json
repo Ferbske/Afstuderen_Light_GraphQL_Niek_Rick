@@ -3,5 +3,6 @@
   "dbName": "AfstuderenLight",
   "dbServer": "localhost",
   "dbPassword": "Y8C8N95ET9nVfHsTQO14GhYBlNCnFZJj8Mj93SK",
-  "connectionString": "mongodb+srv://afstudeerUser:Y8C8N95ET9nVfHsTQO14GhYBlNCnFZJj8Mj93SK@afstuderenlightcluster-vhsq8.gcp.mongodb.net/test?retryWrites=true&w=majority"
+  "connectionString": "mongodb+srv://afstudeerUser:Y8C8N95ET9nVfHsTQO14GhYBlNCnFZJj8Mj93SK@afstuderenlightcluster-vhsq8.gcp.mongodb.net/test?retryWrites=true&w=majority",
+  "v2ConnectionString": "mongodb+srv://v2:hCfxMnJASQxlZOlQSvTZrUSrCjHhaJmWSwGoDSQ@afstuderenlightv2rickniek-4dcbs.gcp.mongodb.net/test?retryWrites=true&w=majority"
 }

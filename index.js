@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || config.serverPort;
 
 //Mongoose
-mongoose.connect("mongodb+srv://afstudeerUser:Y8C8N95ET9nVfHsTQO14GhYBlNCnFZJj8Mj93SK@afstuderenlightcluster-vhsq8.gcp.mongodb.net/test?retryWrites=true&w=majority", {
+mongoose.connect(process.env.v2ConnectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
