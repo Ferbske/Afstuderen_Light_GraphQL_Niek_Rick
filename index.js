@@ -4,9 +4,10 @@ const config = require('./config');
 const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || config.serverPort;
+const env = require('./config');
 
 //Mongoose
-mongoose.connect(process.env.v2ConnectionString, {
+mongoose.connect(env.v2ConnectionString, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
